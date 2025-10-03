@@ -6,33 +6,38 @@
 
 ## Project Overview
 
-- Briefly describe the purpose of the project.
-- Explain the story you are telling through the webpage and the key interactive elements.
+The purpose of this project was to demonstrate to viewers different songs through an interface similar to that of an ipod. 
+
 
 ## Figma Design
 
-- Provide a link to the Figma design of the webpage.
+https://www.figma.com/design/sM1LEXZXX9MW4xJBILb70O/MEDP-33100---Project-1-Designs--Copy-?node-id=0-1&t=hniUrgRgfq8citYR-1
 
 ## Features
 
 - List the key features of the project, including:
-    - **Animations**: Describe the animations you implemented (e.g., CSS transitions, GSAP effects).
-    - **Sound Effects**: Specify where sound effects are used and how they enhance the user experience.
-    - **User-triggered Events**: Explain how users interact with the page (e.g., clicking, scrolling, hovering) and how the page responds.
-    - **Responsive Design**: Explain how the design adapts to different devices (e.g., desktop, tablet, mobile).
-
+    - **Animations**:
+    - scrolling with buttons
+    - **Sound Effects**:
+    - Each song had their own corresponding audio
+    - **User-triggered Events**:
+    - Hover on album covers
+    - scrolling ]
+    - play audio with play button
+    - **Responsive Design**:
+    - when the tab is smaller the buttons are still visible + centered, and the album cover is centered accordingly 
 ## Technologies Used
 
 - List the technologies and tools used in the project:
-    - **Languages**: HTML, CSS, JavaScript
-    - **Libraries**: (e.g., GSAP for animations)
+    - **Languages**:
+    -  HTML, CSS, JavaScript
+    - **Libraries**:n/a
     - **Other**: GitHub Pages for hosting, Figma for design
 
 ## Credits
 
-- List any third-party assets used in the project (e.g., sound effects, images, fonts) and provide proper attribution.
-- Acknowledge any resources, tutorials, or references you used to help complete the project.
+- google, chatgpt, credits to all song owners,mp3 converter, and owner of original album images
 
 ## Future Enhancements
 
-- List any features you would’ve liked to add if given more time
+I would have added the flip/expand as shown in my figma to create a more storytelling/informational feel. As well as an animated background to enhance my site.
