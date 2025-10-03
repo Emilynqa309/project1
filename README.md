@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-- Include a link to the live version of the project hosted on GitHub Pages.
+https://emilynqa309.github.io/project1/
 
 ## Project Overview
 
