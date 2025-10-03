@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+
+}
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/background.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.wrapper {
+    width: 500px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(111, 111, 111);
+    border-radius: 10px;
+    padding: 35px 40px;
+
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(101, 24, 183, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder {
+    color: rgb(110, 110, 110);
+
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: rgb(80, 8, 111);
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(100, 15, 136);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba (0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+/* page 2*/
+.heading {
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    border: 2px solid red;
+    position: relative
+}
+
+.carousel {
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+/* where album covers are stored*/
+.box {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    scroll-snap-align: center;
+    transform: scale(1);
+    display: inline-block;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    text-align: justify;
+    display: flex;
+    /* margin: 12px; */
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.box h2 {
+    padding-top: 20px;
+}
+
+.box img:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+    /* default size */
+}
+
+/* informational flip-card code*/
+
+.box img.is-flipped {
+    transform: rotateY(180deg);
+
+}
+
+.box img div {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    padding: 20px;
+    box-shadow: 0.4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
+
+.back {
+    transform: rotateY(180deg);
+
+}
+
+.learn {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(100, 15, 136);
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3%;
+    transform: 0.2%;
+    width: 200px;
+
+}
+
+.learn:hover {
+    background-color: rgb(58, 0, 58);
+}
+
+.learn:active {
+    transform: scale(0.95);
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    gap: 70px;
+    padding: 50px;
+    max-width: 1150px;
+    height: 500px;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+    /* transform:translateX(1000px); */
+}
+
+.carousel-container .box {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: center;
+    margin: 0 10px;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    max-width: 1150px;
+    height: 65px;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.action {
+    width: 50px;
+    height: 45px;
+    align-items: center;
+    outline: none;
+
+}
+
+.action:hover {
+    transform: scale(1.1)
+}
+
+.img-btn {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.options-continer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
